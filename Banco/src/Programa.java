@@ -10,15 +10,22 @@ public class Programa {
 		Scanner tc = new Scanner(System.in);
 
 		
-		System.out.println("Digite:\n 1- Para cadastrar cliente.\n 2- cadastrar conta.\n 3- Efetuar Deposito:\n 4- Efetuar Saque: \n 5- Efetuar Tranferencia:\n");
+		System.out.println("Digite:1- cadastrar conta.\n 2- Efetuar Deposito:\n 3- Efetuar Saque: \n 4- Efetuar Tranferencia:\n");
 		opc=tc.nextInt();
-		
+		do{
 		switch(opc){
 		
-		case 1:
-		
+		case 1:{
+			ContaCorrente c1 = new ContaCorrente();
+			c1.lerConta();
+			c1.mostrarConta();
+		}
+		case 2:{
+			
+		}
 		}
 		
-	}
+	}while(opc!=0);
 
+}
 }
