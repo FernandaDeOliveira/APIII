@@ -6,7 +6,8 @@ public class Programa {
 	public static void main(String[] args) {
 		
 		int opc;
-		
+			ContaCorrente c1 = new ContaCorrente();
+				ContaCorrente c2 = new ContaCorrente();
 		Scanner tc = new Scanner(System.in);
 
 		
@@ -16,7 +17,7 @@ public class Programa {
 		switch(opc){
 		
 		case 1:{
-			ContaCorrente c1 = new ContaCorrente();
+		
 			c1.lerConta();
 			c1.mostrarConta();
 		}
